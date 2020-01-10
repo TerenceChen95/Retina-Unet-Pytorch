@@ -15,6 +15,15 @@ Data Prefetcher is used to boost loading speed.
 Here I set patch_per_img = 19000, so loading with cpu can be very slow.
 
 ## Usage
+Get training dataset:
+- python generate_train_dataset.py
+
+HDF5 files will be saved under folder hdf5
+
+set epoch number, device,... in config.py
+Then run:
+- python main.py 
+
 
 ## Some results
 ![](./results/out.jpg)
