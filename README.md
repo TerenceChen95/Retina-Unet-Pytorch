@@ -13,4 +13,4 @@ I define 3 types of unet model in the ./models directory
 ## Some results
 ![](./results/out.jpg)
 
-![](./result/out_net_improve.jpg)
+![](./results/out_net_improve.jpg)
