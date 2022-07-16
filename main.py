@@ -64,7 +64,7 @@ def main():
     train_loader = DataLoader(train_data, batch_size=config['batch_size'], shuffle=True)
     prefetcher = data_prefetcher(train_loader)
     solver = Solver(config)
-    solver.train(prefetcher, resume=True, best=True)
+    solver.train(prefetcher, resume=False, best=False)
 
 if __name__ == '__main__':
     main() 
