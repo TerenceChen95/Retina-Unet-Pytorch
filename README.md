@@ -24,6 +24,7 @@ set epoch number, device,... in config.py
   - save_pth: the name of folder saving checkpoints
   - batch_size
   - device: in pytorch device string format (cpu, cuda, cuda:0, etc.)
+
 Then run:
 - python main.py 
 
