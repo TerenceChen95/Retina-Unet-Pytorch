@@ -25,6 +25,8 @@ class Solver(object):
             self.train_step = config['N_subimgs'] / config['batch_size']
        
         self.model_save_dir = config['save_pth']
+        if not os.path.exists(self.model_save_dir):
+            os.mkdir(self.model_save_dir)
         self.best_loss = 10
         self.scheduler = CyclicLR(self.optimizer, step_size= 2*(config['N_subimgs'] % config['batch_size']), mode='triangular2')
 
